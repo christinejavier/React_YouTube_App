@@ -1,1 +1,13 @@
-//YOUR GOAL IS TO CREATE AN INPUT BOX THAT IS CAPABLE OF KEEPING TRACK OF STATE. ALSO, IT NEEDS AN EVENT HANDLER
+import React, {Component} from 'react';
+
+class SearchBar extends Component {
+  constructor(props){
+    super(props);
+    this.state = {term: ''};
+  }
+  render(){
+    return <input onChange={(event) => console.log(event.target.value)}/>
+  }
+}
+
+export default SearchBar;
